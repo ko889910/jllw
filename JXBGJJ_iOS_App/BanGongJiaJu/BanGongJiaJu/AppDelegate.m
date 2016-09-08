@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "MainController.h"
+
 
 @interface AppDelegate ()
 
@@ -18,9 +20,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
    
+    //1-初始化windouw
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
+    //2-设置主控制器
+    self.window.rootViewController = [[MainController alloc] init];
     
-    
+    //3-window可见
+    [self.window makeKeyAndVisible];
     
     
     return YES;
