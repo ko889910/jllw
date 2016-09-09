@@ -20,6 +20,10 @@
 		4CF87AD51D819E9D00C9AEA6 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF87AD11D819E9D00C9AEA6 /* NSArray+Log.m */; };
 		4CF87AD61D819E9D00C9AEA6 /* NSString+Path.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF87AD31D819E9D00C9AEA6 /* NSString+Path.m */; };
 		4CF87AD81D819F2100C9AEA6 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF87AD71D819F2100C9AEA6 /* libsqlite3.tbd */; };
+		4CF87ADB1D81A72E00C9AEA6 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF87ADA1D81A72E00C9AEA6 /* HomeViewController.m */; };
+		4CF87ADE1D81A87500C9AEA6 /* SuperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF87ADD1D81A87500C9AEA6 /* SuperViewController.m */; };
+		4CF87AE71D81A91D00C9AEA6 /* BuyerCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF87AE61D81A91D00C9AEA6 /* BuyerCarViewController.m */; };
+		4CF87AEA1D81A95500C9AEA6 /* MySettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF87AE91D81A95500C9AEA6 /* MySettingViewController.m */; };
 		BC119A999FBC4849BA90D977 /* libPods-BanGongJiaJu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4736CDFBB89F15D0539BB066 /* libPods-BanGongJiaJu.a */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +56,14 @@
 		4CF87AD31D819E9D00C9AEA6 /* NSString+Path.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Path.m"; sourceTree = "<group>"; };
 		4CF87AD41D819E9D00C9AEA6 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
 		4CF87AD71D819F2100C9AEA6 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		4CF87AD91D81A72E00C9AEA6 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		4CF87ADA1D81A72E00C9AEA6 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		4CF87ADC1D81A87500C9AEA6 /* SuperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperViewController.h; sourceTree = "<group>"; };
+		4CF87ADD1D81A87500C9AEA6 /* SuperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperViewController.m; sourceTree = "<group>"; };
+		4CF87AE51D81A91D00C9AEA6 /* BuyerCarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyerCarViewController.h; sourceTree = "<group>"; };
+		4CF87AE61D81A91D00C9AEA6 /* BuyerCarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyerCarViewController.m; sourceTree = "<group>"; };
+		4CF87AE81D81A95500C9AEA6 /* MySettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySettingViewController.h; sourceTree = "<group>"; };
+		4CF87AE91D81A95500C9AEA6 /* MySettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySettingViewController.m; sourceTree = "<group>"; };
 		6C68952A27BFD67EFB1AFEEB /* Pods-BanGongJiaJu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BanGongJiaJu.release.xcconfig"; path = "Pods/Target Support Files/Pods-BanGongJiaJu/Pods-BanGongJiaJu.release.xcconfig"; sourceTree = "<group>"; };
 		F2FE04A55F5B12F508ADE020 /* Pods-BanGongJiaJu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BanGongJiaJu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BanGongJiaJu/Pods-BanGongJiaJu.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -208,6 +220,9 @@
 		4CF87AAF1D81990700C9AEA6 /* 03-BuyerCar */ = {
 			isa = PBXGroup;
 			children = (
+				4CF87AE11D81A8C000C9AEA6 /* Model */,
+				4CF87AE01D81A8BA00C9AEA6 /* View */,
+				4CF87ADF1D81A8B200C9AEA6 /* Controller */,
 			);
 			name = "03-BuyerCar";
 			sourceTree = "<group>";
@@ -215,6 +230,9 @@
 		4CF87AB01D81992100C9AEA6 /* 04-MySetting */ = {
 			isa = PBXGroup;
 			children = (
+				4CF87AE41D81A8D800C9AEA6 /* Model */,
+				4CF87AE31D81A8D200C9AEA6 /* View */,
+				4CF87AE21D81A8C900C9AEA6 /* Controller */,
 			);
 			name = "04-MySetting";
 			sourceTree = "<group>";
@@ -252,6 +270,8 @@
 		4CF87AB51D8199AA00C9AEA6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4CF87AD91D81A72E00C9AEA6 /* HomeViewController.h */,
+				4CF87ADA1D81A72E00C9AEA6 /* HomeViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -273,6 +293,8 @@
 		4CF87ABB1D819A5B00C9AEA6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4CF87ADC1D81A87500C9AEA6 /* SuperViewController.h */,
+				4CF87ADD1D81A87500C9AEA6 /* SuperViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -294,6 +316,52 @@
 				4CF87AC91D819E5000C9AEA6 /* Info.plist */,
 			);
 			path = fmdb;
+			sourceTree = "<group>";
+		};
+		4CF87ADF1D81A8B200C9AEA6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4CF87AE51D81A91D00C9AEA6 /* BuyerCarViewController.h */,
+				4CF87AE61D81A91D00C9AEA6 /* BuyerCarViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		4CF87AE01D81A8BA00C9AEA6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4CF87AE11D81A8C000C9AEA6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4CF87AE21D81A8C900C9AEA6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4CF87AE81D81A95500C9AEA6 /* MySettingViewController.h */,
+				4CF87AE91D81A95500C9AEA6 /* MySettingViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		4CF87AE31D81A8D200C9AEA6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4CF87AE41D81A8D800C9AEA6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		D3E360B89D286BEFF05158A8 /* Pods */ = {
@@ -427,11 +495,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CF87AD51D819E9D00C9AEA6 /* NSArray+Log.m in Sources */,
+				4CF87AEA1D81A95500C9AEA6 /* MySettingViewController.m in Sources */,
 				4CF87A941D818D9500C9AEA6 /* AppDelegate.m in Sources */,
+				4CF87ADE1D81A87500C9AEA6 /* SuperViewController.m in Sources */,
+				4CF87AE71D81A91D00C9AEA6 /* BuyerCarViewController.m in Sources */,
 				4CF87ACC1D819E5000C9AEA6 /* FMDatabasePool.m in Sources */,
 				4CF87AB81D8199E600C9AEA6 /* MainController.m in Sources */,
 				4CF87AD61D819E9D00C9AEA6 /* NSString+Path.m in Sources */,
 				4CF87ACD1D819E5000C9AEA6 /* FMDatabaseQueue.m in Sources */,
+				4CF87ADB1D81A72E00C9AEA6 /* HomeViewController.m in Sources */,
 				4CF87A911D818D9400C9AEA6 /* main.m in Sources */,
 				4CF87ACA1D819E5000C9AEA6 /* FMDatabase.m in Sources */,
 				4CF87ACE1D819E5000C9AEA6 /* FMResultSet.m in Sources */,
