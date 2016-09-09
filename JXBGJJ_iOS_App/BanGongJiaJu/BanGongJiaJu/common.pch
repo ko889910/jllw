@@ -1,0 +1,43 @@
+//
+//  common.pch
+//  BanGongJiaJu
+//
+//  Created by 王炯 on 16/9/8.
+//  Copyright © 2016年 王炯. All rights reserved.
+//
+
+#ifndef common_pch
+#define common_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+/*  第三方约束  */
+#import "Masonry.h"
+
+/*  第三方网络图片加载工具  */
+#import "UIImageView+WebCache.h"
+
+/*  数组输出工具  */
+#import "NSArray+Log.h"
+
+/*  当前屏幕的Size  */
+#define kScreenSize ([UIScreen mainScreen].bounds.size)
+
+
+/* 亮灰色 */
+#define kLightGaryColor ([UIColor lightGrayColor])
+#define kHomeBGColor ([UIColor colorWithRed:235/255.0 green:235/255.0 blue:235/255.0 alpha:1])
+
+/*  指定日志输出宏  */
+#ifdef DEBUG
+#define ABLog(...) NSLog(__VA_ARGS__)
+#else
+#define ABLog(...)/* */
+#endif
+
+
+
+
+#endif /* common_pch */

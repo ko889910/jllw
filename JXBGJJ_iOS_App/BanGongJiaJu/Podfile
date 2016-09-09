@@ -1,0 +1,21 @@
+# Uncomment this line to define a global platform for your project
+ platform :ios, '8.0'
+
+target 'BanGongJiaJu' do
+  # Uncomment this line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for BanGongJiaJu
+
+ pod 'AFNetworking'
+pod 'Masonry'
+pod 'SVProgressHUD'
+pod 'SDWebImage'
+pod 'MJRefresh'
+pod 'Reachability'
+pod 'YYModel'
+ # pop 动画
+pod 'pop' 
+
+
+end
