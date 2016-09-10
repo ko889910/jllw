@@ -26,6 +26,17 @@ static NSString *identify = @"homeTableCell";
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:identify];
 }
 
+
+-(void)setNum:(NSInteger)num
+{
+    _num = num;
+    
+    
+    [self.tableView reloadData];
+    
+}
+
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -35,7 +46,6 @@ static NSString *identify = @"homeTableCell";
 //(1)组
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    
      NSInteger section = 2;
     
     if (self.num == 0)
@@ -75,6 +85,9 @@ static NSString *identify = @"homeTableCell";
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identify forIndexPath:indexPath];
+    
+    cell.textLabel.text = [NSString stringWithFormat:@"第%ld组第%ld行",(long)indexPath.section,(long)indexPath.row];
+    
     
     
     return cell;

@@ -15,7 +15,7 @@
 {
     if (self = [super initWithFrame:frame])
     {
-        //self.contentView.backgroundColor = RANDOMCOLOR;
+        self.contentView.backgroundColor = RANDOMCOLOR;
         
         //加载一个tableView到cell中
         HomeTableController *vc = [[HomeTableController alloc] init];

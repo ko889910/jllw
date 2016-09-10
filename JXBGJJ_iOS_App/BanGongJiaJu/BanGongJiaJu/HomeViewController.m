@@ -43,7 +43,7 @@ static NSString * const reuseIdentifier = @"HomeCell";
     
     
     //设置cell的大小
-    flowLayout.itemSize = CGSizeMake(kScreenSize.width, kScreenSize.height - 64);
+    flowLayout.itemSize = CGSizeMake(kScreenSize.width, kScreenSize.height - 80);
     
     
     //设置cell的滚动方向(默认为垂直方向)
@@ -114,6 +114,10 @@ static NSString * const reuseIdentifier = @"HomeCell";
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     HomeViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    
+    
+    cell.num = indexPath.item;
+    
     
     return cell;
 }
