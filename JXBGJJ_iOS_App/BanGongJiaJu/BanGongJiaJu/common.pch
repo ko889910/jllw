@@ -30,6 +30,29 @@
 #define kLightGaryColor ([UIColor lightGrayColor])
 #define kHomeBGColor ([UIColor colorWithRed:235/255.0 green:235/255.0 blue:235/255.0 alpha:1])
 
+
+//判断手机型号
+#define kDevice_Is_iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+#define kDevice_Is_iPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) : NO)
+#define kDevice_Is_iPhone6Plus ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) : NO)
+
+
+//网络不佳
+#define kNetWorkFailureStatus @"当前网络不佳，请检查网络"
+
+///颜色
+#define RANDOMCOLOR [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1]
+#define RGBCOLOR(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1]
+#define RGBACOLOR(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+#define RGBHexColor(hexValue) [UIColor colorWithRed:((float)((hexValue & 0xFF0000) >> 16)) / 255.0 green:((float)((hexValue & 0xFF00) >> 8)) / 255.0 blue:((float)(hexValue & 0xFF)) / 255.0 alpha:1.0] //RGBHexColor(0xefefef)
+
+
+///系统版本号
+#define iOS_SYSTEM   [[[UIDevice currentDevice] systemName] doubleValue]
+
+
+
+
 /*  指定日志输出宏  */
 #ifdef DEBUG
 #define ABLog(...) NSLog(__VA_ARGS__)

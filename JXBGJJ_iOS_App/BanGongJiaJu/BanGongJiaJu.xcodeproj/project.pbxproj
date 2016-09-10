@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C5753181D83F4A50073FCAB /* HomeViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5753171D83F4A50073FCAB /* HomeViewCell.m */; };
+		4C57531C1D8408060073FCAB /* HomeTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C57531B1D8408060073FCAB /* HomeTableController.m */; };
 		4CF87A911D818D9400C9AEA6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF87A901D818D9400C9AEA6 /* main.m */; };
 		4CF87A941D818D9500C9AEA6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF87A931D818D9500C9AEA6 /* AppDelegate.m */; };
 		4CF87A9C1D818D9500C9AEA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CF87A9B1D818D9500C9AEA6 /* Assets.xcassets */; };
@@ -29,6 +31,10 @@
 
 /* Begin PBXFileReference section */
 		4736CDFBB89F15D0539BB066 /* libPods-BanGongJiaJu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BanGongJiaJu.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C5753161D83F4A50073FCAB /* HomeViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewCell.h; sourceTree = "<group>"; };
+		4C5753171D83F4A50073FCAB /* HomeViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewCell.m; sourceTree = "<group>"; };
+		4C57531A1D8408060073FCAB /* HomeTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableController.h; sourceTree = "<group>"; };
+		4C57531B1D8408060073FCAB /* HomeTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableController.m; sourceTree = "<group>"; };
 		4CF87A8C1D818D9400C9AEA6 /* BanGongJiaJu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BanGongJiaJu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CF87A901D818D9400C9AEA6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4CF87A921D818D9400C9AEA6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -88,6 +94,24 @@
 				4736CDFBB89F15D0539BB066 /* libPods-BanGongJiaJu.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C5753151D83F4810073FCAB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4C5753161D83F4A50073FCAB /* HomeViewCell.h */,
+				4C5753171D83F4A50073FCAB /* HomeViewCell.m */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		4C5753191D8407640073FCAB /* TableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4C57531A1D8408060073FCAB /* HomeTableController.h */,
+				4C57531B1D8408060073FCAB /* HomeTableController.m */,
+			);
+			name = TableViewController;
 			sourceTree = "<group>";
 		};
 		4CF87A831D818D9400C9AEA6 = {
@@ -263,6 +287,7 @@
 		4CF87AB41D8199A300C9AEA6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4C5753151D83F4810073FCAB /* Cell */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -270,6 +295,7 @@
 		4CF87AB51D8199AA00C9AEA6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4C5753191D8407640073FCAB /* TableViewController */,
 				4CF87AD91D81A72E00C9AEA6 /* HomeViewController.h */,
 				4CF87ADA1D81A72E00C9AEA6 /* HomeViewController.m */,
 			);
@@ -499,9 +525,11 @@
 				4CF87A941D818D9500C9AEA6 /* AppDelegate.m in Sources */,
 				4CF87ADE1D81A87500C9AEA6 /* SuperViewController.m in Sources */,
 				4CF87AE71D81A91D00C9AEA6 /* BuyerCarViewController.m in Sources */,
+				4C57531C1D8408060073FCAB /* HomeTableController.m in Sources */,
 				4CF87ACC1D819E5000C9AEA6 /* FMDatabasePool.m in Sources */,
 				4CF87AB81D8199E600C9AEA6 /* MainController.m in Sources */,
 				4CF87AD61D819E9D00C9AEA6 /* NSString+Path.m in Sources */,
+				4C5753181D83F4A50073FCAB /* HomeViewCell.m in Sources */,
 				4CF87ACD1D819E5000C9AEA6 /* FMDatabaseQueue.m in Sources */,
 				4CF87ADB1D81A72E00C9AEA6 /* HomeViewController.m in Sources */,
 				4CF87A911D818D9400C9AEA6 /* main.m in Sources */,
