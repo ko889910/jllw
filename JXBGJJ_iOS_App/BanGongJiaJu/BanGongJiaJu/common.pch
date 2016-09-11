@@ -47,6 +47,10 @@
 #define RGBHexColor(hexValue) [UIColor colorWithRed:((float)((hexValue & 0xFF0000) >> 16)) / 255.0 green:((float)((hexValue & 0xFF00) >> 8)) / 255.0 blue:((float)(hexValue & 0xFF)) / 255.0 alpha:1.0] //RGBHexColor(0xefefef)
 
 
+//主题颜色
+#define navigationBarColor RGBCOLOR(33, 192, 174)
+
+
 ///系统版本号
 #define iOS_SYSTEM   [[[UIDevice currentDevice] systemName] doubleValue]
 

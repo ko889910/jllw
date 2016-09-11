@@ -7,10 +7,11 @@
 //
 
 #import "MainController.h"
-#import "HomeViewController.h"
 #import "SuperViewController.h"
 #import "BuyerCarViewController.h"
 #import "MySettingViewController.h"
+#import "TheHomeViewController.h"
+
 
 
 
@@ -37,7 +38,7 @@
 {
     
     //(1)首页
-    [self addChildController:[[HomeViewController alloc] init] WithTitle:@"首页" WithImageName:@"v2_home"];
+    [self addChildController:[[TheHomeViewController alloc] init] WithTitle:@"首页" WithImageName:@"v2_home"];
     
     //(2)超市
     [self addChildController:[[SuperViewController alloc] init] WithTitle:@"家具超市" WithImageName:@"v2_order"];

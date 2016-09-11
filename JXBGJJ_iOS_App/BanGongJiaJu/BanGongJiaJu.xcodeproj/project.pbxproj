@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C06C5BF1D84FE0900E79ACD /* TheHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C06C5BE1D84FE0900E79ACD /* TheHomeViewController.m */; };
 		4C5753181D83F4A50073FCAB /* HomeViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5753171D83F4A50073FCAB /* HomeViewCell.m */; };
 		4C57531C1D8408060073FCAB /* HomeTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C57531B1D8408060073FCAB /* HomeTableController.m */; };
 		4CF87A911D818D9400C9AEA6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF87A901D818D9400C9AEA6 /* main.m */; };
@@ -22,7 +23,6 @@
 		4CF87AD51D819E9D00C9AEA6 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF87AD11D819E9D00C9AEA6 /* NSArray+Log.m */; };
 		4CF87AD61D819E9D00C9AEA6 /* NSString+Path.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF87AD31D819E9D00C9AEA6 /* NSString+Path.m */; };
 		4CF87AD81D819F2100C9AEA6 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF87AD71D819F2100C9AEA6 /* libsqlite3.tbd */; };
-		4CF87ADB1D81A72E00C9AEA6 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF87ADA1D81A72E00C9AEA6 /* HomeViewController.m */; };
 		4CF87ADE1D81A87500C9AEA6 /* SuperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF87ADD1D81A87500C9AEA6 /* SuperViewController.m */; };
 		4CF87AE71D81A91D00C9AEA6 /* BuyerCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF87AE61D81A91D00C9AEA6 /* BuyerCarViewController.m */; };
 		4CF87AEA1D81A95500C9AEA6 /* MySettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF87AE91D81A95500C9AEA6 /* MySettingViewController.m */; };
@@ -31,6 +31,8 @@
 
 /* Begin PBXFileReference section */
 		4736CDFBB89F15D0539BB066 /* libPods-BanGongJiaJu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BanGongJiaJu.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C06C5BD1D84FE0900E79ACD /* TheHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheHomeViewController.h; sourceTree = "<group>"; };
+		4C06C5BE1D84FE0900E79ACD /* TheHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheHomeViewController.m; sourceTree = "<group>"; };
 		4C5753161D83F4A50073FCAB /* HomeViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewCell.h; sourceTree = "<group>"; };
 		4C5753171D83F4A50073FCAB /* HomeViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewCell.m; sourceTree = "<group>"; };
 		4C57531A1D8408060073FCAB /* HomeTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableController.h; sourceTree = "<group>"; };
@@ -62,8 +64,6 @@
 		4CF87AD31D819E9D00C9AEA6 /* NSString+Path.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Path.m"; sourceTree = "<group>"; };
 		4CF87AD41D819E9D00C9AEA6 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
 		4CF87AD71D819F2100C9AEA6 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		4CF87AD91D81A72E00C9AEA6 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
-		4CF87ADA1D81A72E00C9AEA6 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		4CF87ADC1D81A87500C9AEA6 /* SuperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperViewController.h; sourceTree = "<group>"; };
 		4CF87ADD1D81A87500C9AEA6 /* SuperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperViewController.m; sourceTree = "<group>"; };
 		4CF87AE51D81A91D00C9AEA6 /* BuyerCarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyerCarViewController.h; sourceTree = "<group>"; };
@@ -296,8 +296,8 @@
 			isa = PBXGroup;
 			children = (
 				4C5753191D8407640073FCAB /* TableViewController */,
-				4CF87AD91D81A72E00C9AEA6 /* HomeViewController.h */,
-				4CF87ADA1D81A72E00C9AEA6 /* HomeViewController.m */,
+				4C06C5BD1D84FE0900E79ACD /* TheHomeViewController.h */,
+				4C06C5BE1D84FE0900E79ACD /* TheHomeViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -531,10 +531,10 @@
 				4CF87AD61D819E9D00C9AEA6 /* NSString+Path.m in Sources */,
 				4C5753181D83F4A50073FCAB /* HomeViewCell.m in Sources */,
 				4CF87ACD1D819E5000C9AEA6 /* FMDatabaseQueue.m in Sources */,
-				4CF87ADB1D81A72E00C9AEA6 /* HomeViewController.m in Sources */,
 				4CF87A911D818D9400C9AEA6 /* main.m in Sources */,
 				4CF87ACA1D819E5000C9AEA6 /* FMDatabase.m in Sources */,
 				4CF87ACE1D819E5000C9AEA6 /* FMResultSet.m in Sources */,
+				4C06C5BF1D84FE0900E79ACD /* TheHomeViewController.m in Sources */,
 				4CF87ACB1D819E5000C9AEA6 /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

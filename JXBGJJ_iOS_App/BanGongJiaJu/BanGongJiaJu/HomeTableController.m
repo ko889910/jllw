@@ -23,6 +23,10 @@ static NSString *identify = @"homeTableCell";
     [super viewDidLoad];
     
     
+    
+    
+    
+    
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:identify];
 }
 
