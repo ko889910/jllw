@@ -405,11 +405,55 @@ static NSString *collectionIdentifier = @"collectCell";
         {
             //collection滚动到响应的cell
             [weakSelf.homeCollectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:idx inSection:0] atScrollPosition:UICollectionViewScrollPositionNone animated:YES];
+            
+            
+            //moveLine的滑动
+            //判断是不是第一个
+            if (idx == 0)
+            {
+                self.moveLine.transform = CGAffineTransformIdentity;
+            }
+            else
+            {
+                
+                //moveLine的滑动距离
+                CGFloat moveX = (50 + self.midButton.bounds.size.width) * idx;
+                
+                //moveLine滑动
+                self.moveLine.transform =CGAffineTransformMakeTranslation(moveX, 0);
+            }
+            
         }
     
     }];
     
 }
+
+
+-(void)ClickButtonWith:(NSInteger )buttonIndex
+{
+    
+    UIButton *clickButton = self.buttonArray[buttonIndex];
+    
+    
+    
+    //点击的button字体变成黑色
+    [clickButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    
+    [self.buttonArray enumerateObjectsUsingBlock:^(UIButton * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+       
+        
+        if (obj != clickButton)
+        {
+            [obj setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+        }
+        
+    }];
+    
+    
+}
+
+
 
 //设置下面的collectionView
 -(void)setUpCollectionView
@@ -503,6 +547,30 @@ static NSString *collectionIdentifier = @"collectCell";
     return cell;
 }
 
+
+//(4)当手动拖拽collectionView时的触发事件
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    
+    CGFloat scale = scrollView.contentOffset.x / self.homeCollectionView.bounds.size.width;
+    
+    
+    //moveLine的滑动距离
+    CGFloat moveX = (50 + self.midButton.bounds.size.width) * scale;
+    
+    //moveLine运动
+    _moveLine.transform = CGAffineTransformMakeTranslation(moveX, 0);
+}
+
+//(5)当手动拖拽完成之后的触发事件
+-(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    NSInteger index = scrollView.contentOffset.x/self.homeCollectionView.bounds.size.width;
+    
+    
+    [self ClickButtonWith:index];
+    
+}
 
 
 
